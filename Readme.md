@@ -18,8 +18,8 @@ Database: upbet
     [Baixe aqui](/affiliates.csv)
 
 
-## Objetivo
-- Gerar Relatório de pagamento dos afiliados.
+## Objetivos
+- Encontrar a porcentagem para calcular o valor de acréscimo.
 - Calcular a soma total de apostas do cliente de cada afiliado do arquivo CSV.
 - Utilizando os totais das apostas e os dados da tabela limites, determinar a porcentagem aplicada ao pagamento final.
 
@@ -29,8 +29,8 @@ Database: upbet
 
 ### Exemplo
 ```
-Para uma soma total de apostas de R$340 a porcentagem aplicada será de 25%,
-porque está dentro do valor limite de R$400
+Para uma soma total de apostas de R$340, a porcentagem aplicada será de 25%.
+O valor está dentro do limite de R$400.
 ```
 
 | Valor  | Porcentagem  |
