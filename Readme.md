@@ -5,7 +5,7 @@
 # Desafio de análise de dados
 
 ## Recursos
-- Banco de dados com acesso a clientes e apostas.
+### Banco de dados com acesso a tabelas de clientes e apostas.
 ```
 Postgresql
 Host: 144.22.211.147
@@ -14,14 +14,20 @@ User: bear
 Password: dev!!!00
 Database: upbet
 ```
-- CSV de pagamentos dos afiliados.
-    [Baixe aqui](/affiliates.csv)
+Utilize as credenciais fornecidas para acessar o banco de dados PostgreSQL. <br>
+Explore as tabelas relacionadas aos clientes e apostas para obter informações relevantes e realizar a consulta das somas de apostas dos clientes.
 
+### CSV de pagamentos dos afiliados. [Baixe aqui](/affiliates.csv)
 
-## Objetivos
-- Encontrar a porcentagem para calcular o valor de acréscimo.
-- Calcular a soma total de apostas do cliente de cada afiliado do arquivo CSV.
+No CSV estão disponíveis as informações dos dados de pagamento e do cliente de cada afiliado.
+ 
+## Objetivo
+- Gerar um novo relatório de pagamento dos afiliados.
+- Calcular a soma total de apostas do cliente no banco de dados para cada afiliado encontrado no arquivo CSV.
 - Utilizando os totais das apostas e os dados da tabela limites, determinar a porcentagem aplicada ao pagamento final.
+- Determine a porcentagem necessária para calcular o valor de acréscimo com base nas  informações fornecidas na tabela limites.
+- Calcule a soma total de apostas do cliente para cada afiliado usando os dados do banco de dados.
+- Aplique a porcentagem encontrada ao valor na coluna "pagamentos" do CSV para obter o pagamento final.
 
 ## Cálculo do pagamento
 
@@ -29,17 +35,19 @@ Database: upbet
 
 ### Exemplo
 ```
-Para uma soma total de apostas de R$340, a porcentagem aplicada será de 25%.
-O valor está dentro do limite de R$400.
+Para uma soma total de apostas de R$340 a porcentagem aplicada será de 42%.
+O valor está dentro do limite de R$444.
 ```
 
 | Valor  | Porcentagem  |
 |--------|--------------|
-| 100    | 10%          |
-| 200    | 15%          |
-| 300    | 20%          |
-| 400    | 25%          |
-| 500    | 30%          |
+| 120    | 8%           |
+| 286    | 16%          |
+| 310    | 35%          |
+| 444    | 42%          |
+| 540    | 60%          |
+
+Tabela de exemplo, para realizar o cálculo utilize a tabela `limits` do bando de dados.
 
 #### * Valores maiores que R$500 é aplicado 50%
 
@@ -48,9 +56,9 @@ O valor está dentro do limite de R$400.
 ```
 ID de afiliado (affiliate_id) - CSV
 Valor do pagamento - CSV
-Soma das apostas do cliente - Banco de dados
-Porcentagem do acréscimo - Porcentagem encontrada
-Pagamento final - Pagamento com acréscimo
+Soma das apostas do cliente - (obtida do banco de dados)
+Porcentagem do acréscimo - (calculada com base na tabela limites)
+Pagamento final - (resultado da aplicação da porcentagem ao valor do pagamento do CSV)
 ```
 
 ## Diferencial
@@ -60,5 +68,6 @@ Pagamento final - Pagamento com acréscimo
 - Arquivos
 - Ferramentas
 - Imagens
+- Consultas SQL
 
 **Enviar para o email [dev@upbet.com](mailto:dev@upbet.com)**
