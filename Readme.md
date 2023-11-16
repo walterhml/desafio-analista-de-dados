@@ -26,7 +26,6 @@ No CSV estão disponíveis as informações dos dados de pagamento e do cliente 
 - Calcular a soma total de apostas do cliente no banco de dados para cada afiliado encontrado no arquivo CSV.
 - Utilizando os totais das apostas e os dados da tabela limites, determinar a porcentagem aplicada ao pagamento final.
 - Determine a porcentagem necessária para calcular o valor de acréscimo com base nas  informações fornecidas na tabela limites.
-- Calcule a soma total de apostas do cliente para cada afiliado usando os dados do banco de dados.
 - Aplique a porcentagem encontrada ao valor na coluna "pagamentos" do CSV para obter o pagamento final.
 
 ## Cálculo do pagamento
@@ -64,10 +63,18 @@ Pagamento final - (resultado da aplicação da porcentagem ao valor do pagamento
 ## Diferencial
 - Implementação ou integração de ferramenta para visualização do relatório final
 
+## Pontos que devem ser mostrados:
+
+- Consulta somando as apostas dos clientes
+- Estratégia utilizada para obter a porcentagem que o pagamento se qualifica utilizando a tabela limits
+- Como foi realizado o cálculo de acréscimo do pagamento final
+Apresentação dos novos resultados 
+
 ## Envio do projeto / Dúvidas
 - Arquivos
 - Ferramentas
 - Imagens
 - Consultas SQL
+
 
 **Enviar para o email [dev@upbet.com](mailto:dev@upbet.com)**
