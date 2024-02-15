@@ -17,9 +17,14 @@ Database: upbet
 Utilize as credenciais fornecidas para acessar o banco de dados PostgreSQL. <br>
 Explore as tabelas relacionadas aos clientes e apostas para obter informações relevantes e realizar a consulta das somas de apostas dos clientes.
 
+
+```diff
+- Não há necessidade de criação de tabelas, usar os dados que já existem no banco.
+```
+
 ### CSV de pagamentos dos afiliados. [Baixe aqui](/affiliates.csv)
 
-No CSV estão disponíveis as informações dos dados de pagamento e do cliente de cada afiliado.
+!No CSV estão disponíveis as informações dos dados de pagamento e do cliente de cada afiliado.
  
 ## Objetivo
 - Gerar um novo relatório de pagamento dos afiliados.
@@ -61,14 +66,15 @@ Pagamento final - (resultado da aplicação da porcentagem ao valor do pagamento
 ```
 
 ## Diferencial
-- Implementação ou integração de ferramenta para visualização do relatório final
+- Implementação ou integração de ferramenta para visualização do relatório final.
 
 ## Pontos que devem ser mostrados:
 
-- Consulta somando as apostas dos clientes
-- Estratégia utilizada para obter a porcentagem que o pagamento se qualifica utilizando a tabela limits
+- Consulta somando as apostas dos clientes.
+- Estratégia utilizada para obter a porcentagem que o pagamento se qualifica utilizando a tabela limits.
 - Como foi realizado o cálculo de acréscimo do pagamento final
-Apresentação dos novos resultados 
+Apresentação dos novos resultados.
+- Atenção ao enunciado do desafio.
 
 ## Envio do projeto / Dúvidas
 - Arquivos
