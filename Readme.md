@@ -59,9 +59,10 @@ Tabela de exemplo, para realizar o cálculo utilize a tabela `limits` do bando d
 ### Dados essenciais no relatório
 ```
 ID de afiliado (affiliate_id) - CSV
+ID do usuario (customer_id) - (obtida do banco de dados)
 Valor do pagamento - CSV
 Soma das apostas do cliente - (obtida do banco de dados)
-Porcentagem do acréscimo - (calculada com base na tabela limites)
+Porcentagem do acréscimo - (calculada com base na tabela limits)
 Pagamento final - (resultado da aplicação da porcentagem ao valor do pagamento do CSV)
 ```
 
