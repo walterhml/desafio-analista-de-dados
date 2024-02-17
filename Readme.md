@@ -28,7 +28,7 @@ Explore as tabelas relacionadas aos clientes e apostas para obter informações 
  
 ## Objetivo
 - Gerar um novo relatório de pagamento dos afiliados.
-- Calcular a soma total de apostas do cliente no banco de dados para cada afiliado encontrado no arquivo CSV.
+- Calcular a soma total de apostas do cliente no banco de dados de cada afiliado encontrado no arquivo CSV.
 - Utilizando os totais das apostas e os dados da tabela limites, determinar a porcentagem aplicada ao pagamento final.
 - Determine a porcentagem necessária para calcular o valor de acréscimo com base nas  informações fornecidas na tabela limites.
 - Aplique a porcentagem encontrada ao valor na coluna "pagamentos" do CSV para obter o pagamento final.
